@@ -1,0 +1,17 @@
+#include <iostream>
+#include <iomanip>      // std::setprecision
+
+using namespace std;
+ 
+int main() {
+ 
+    double r, a, pi = 3.14159;
+    
+    cin >> r;
+    
+    a = pi * r * r;
+    
+    cout << fixed << setprecision (4) << "A=" << a << endl;
+ 
+    return 0;
+}
