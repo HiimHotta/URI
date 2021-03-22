@@ -7,51 +7,16 @@ Saída
 Apresente a duração do jogo conforme exemplo abaixo.
 ******************************************************************************************************************/
 
-
-#include <iostream>
- 
 using namespace std;
- 
+
 int main() {
 
-	// _h -> horas, _min ->minutos, ini -> inicio
-	// fim -> final, res -> resultado
-    int ini_h, ini_min, fim_h, fim_min, res_h, res_min;
-    
-    cin >> ini_h >> ini_min >> fim_h >> fim_min;
+    int begin, end;
 
-    // 4 casos
-    if (ini_min < fim_min) {
-    	res_min = fim_min - ini_min;
+    cin >> begin >> end;
 
-    	if (ini_h <= fim_h)
-    		res_h = fim_h - ini_h;
-    	
-    	else
-    		res_h = 24 + fim_h - ini_h;
-    }
+    if (begin >= end)
+        cout << "O JOGO DUROU " << 24 - begin + end << " HORA(S)" << endl;
 
-    else if (ini_min == fim_min) {
-    	res_min = 0; 
-
-    	if (ini_h < fim_h)
-    		res_h = fim_h - ini_h;
-    	
-    	else
-    		res_h = 24 + fim_h - ini_h;
-    }
-
-    else {
-    	res_min = 60 + fim_min - ini_min;
-
-    	if (ini_h < fim_h)
-    		res_h = fim_h - ini_h - 1;
-
-    	else
-    		res_h = 24 + fim_h - ini_h - 1;
-    }
-
-    cout << "O JOGO DUROU " << res_h << " HORA(S) E " << res_min << " MINUTO(S)" << endl;
-    
-    return 0;
-}
+    else
+        cout << "O JOGO DUROU " << end - begin << " HORA(S)" << endl;
