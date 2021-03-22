@@ -1,10 +1,13 @@
 /******************************************************************************************************************
-Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, sabendo que o mesmo pode começar
-em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 horas.
+Leia a hora inicial, minuto inicial, hora final e minuto final de um jogo. A seguir calcule a duração do jogo.
+
+Obs: O jogo tem duração mínima de um (1) minuto e duração máxima de 24 horas.
+
 Entrada
-A entrada contém dois valores inteiros representando a hora de início e a hora de fim do jogo.
+Quatro números inteiros representando a hora de início e fim do jogo.
+
 Saída
-Apresente a duração do jogo conforme exemplo abaixo.
+Mostre a seguinte mensagem: “O JOGO DUROU XXX HORA(S) E YYY MINUTO(S)” .
 ******************************************************************************************************************/
 
 
